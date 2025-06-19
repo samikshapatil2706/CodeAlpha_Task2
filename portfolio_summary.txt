@@ -1,0 +1,9 @@
+📄 Stock Portfolio Summary (India)
+----------------------------------
+Symbol       | Company                        | Summary
+----------------------------------------------------------------------
+TCS          | Tata Consultancy Services      | 4 shares × ₹3800 = ₹15200
+INFY         | Infosys Ltd.                   | 5 shares × ₹1600 = ₹8000
+ITC          | ITC Ltd.                       | 10 shares × ₹450 = ₹4500
+
+Total Investment: ₹27700
