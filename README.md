@@ -1,69 +1,79 @@
-📊 CodeAlpha Task: Stock Portfolio Tracker
-Project Overview
-Stock Portfolio Tracker is a simple and practical command-line Python application designed especially for beginner programmers. The main objective is to allow users to track their stock investments by entering stock names and quantities, and calculating the total portfolio value based on fixed prices.
+# CodeAlpha Task: Stock Portfolio Tracker
 
-Game Concept
-A set of predefined stocks and their current prices are stored in a Python dictionary:
-"RELIANCE", "TCS", "INFY", "HDFC", "ITC", "HCL", "WIPRO", and more.
+## Project Overview  
+Stock Portfolio Tracker is a simple and practical command-line Python application designed especially for beginner programmers. The main objective is to help users track their stock investments by entering stock names and quantities, and calculating the total portfolio value based on predefined prices.
 
-The user is prompted to input stock names and quantities:
+---
 
-If the stock is valid, its total value is calculated (price × quantity).
+## Concept  
 
-If the stock is invalid, a warning is shown and input is ignored.
+A set of predefined stocks and their current prices are stored in a Python dictionary, such as:  
+"RELIANCE", "TCS", "INFY", "HDFC", "ITC", "HCL", "WIPRO" and more.
 
-Once the user types "done", the program displays:
+Users are prompted to input:
+- Valid stock name → the program calculates `price × quantity`
+- Invalid stock name → a warning is shown and input is ignored
 
-A summary of each stock with quantity and total value
+After typing "done", the program displays:
+- A summary of each stock (name, quantity, value)
+- The total portfolio value
 
-The total portfolio value
+This simulates a simple stock tracker for educational purposes and introduces core concepts of data collection and processing.
 
-This program simulates a personal stock-tracking tool, useful for beginners to understand data collection and calculation with real-world examples.
+---
 
-Extended Features
-This version includes a modular structure using a portfolio_tracker() function, which allows:
+## Extended Features
 
-Tracking multiple stocks in a session
+- Modular structure using a `portfolio_tracker()` function
+- Track multiple stocks per session
+- Loop to allow dynamic input
+- Total value calculation
+- Optional replay of the tracker after each session
 
-Looping to handle dynamic stock entries
+---
 
-Summing up total portfolio value at the end
+## Python Concepts Used
 
-Optionally prompting the user to track again in a new session
+- Loops (`while`, `for`)  
+- Functions and modular code (`def`)  
+- Dictionaries and list operations  
+- Conditional statements (`if`, `else`)  
+- User input and output handling  
+- String formatting and numeric operations  
 
-Python Concepts Used
-This project helps reinforce important Python programming concepts:
+---
 
-Loops (while, for)
+## Customization Ideas
 
-Functions and modular code (def)
+- Add more stocks to the dictionary  
+- Integrate real-time stock prices using APIs (e.g., NSE, Yahoo Finance)  
+- Track portfolio history across sessions  
+- Add profit/loss calculations and performance charts  
+- Build a GUI with Tkinter or a web app using Flask  
 
-Dictionaries and list operations
+---
 
-User input and output handling
+## Ideal For
 
-Conditional statements (if, else)
+- Beginner Python developers  
+- Students learning data structures and logic  
+- Finance and commerce students exploring automation  
+- Anyone interested in a real-world finance project
 
-String formatting and numeric operations
+---
 
-Customization
-You can easily extend or customize this tracker:
+## Sample Output
 
-Add more stocks and prices to the dictionary
+```bash
+Enter stock name and quantity (type 'done' to finish):
+Stock: RELIANCE
+Quantity: 3
+Stock: TCS
+Quantity: 2
+Stock: done
 
-Integrate real-time stock prices using APIs (like NSE/BSE or Yahoo Finance)
+Portfolio Summary:
+- RELIANCE (₹3050 × 3) = ₹9150
+- TCS (₹3800 × 2) = ₹7600
 
-Include date-wise or session-based tracking
-
-Add features like profit/loss calculation, percentage gains, or chart visualization
-
-Build a GUI or web interface using tools like Tkinter or Flask
-
-Ideal For
-Beginner Python programmers
-
-Students learning dictionaries, input handling, and basic logic
-
-Finance and commerce students exploring tech integration
-
-Anyone wanting to build a useful, real-world Python project
+Total Portfolio Value: ₹16,750
