@@ -1,80 +1,69 @@
-# CodeAlpha_Task2
-CodeAlpha Task: Stock Portfolio Tracker
+📊 CodeAlpha Task: Stock Portfolio Tracker
 Project Overview
-The Stock Portfolio Tracker is a simple yet practical Python-based command-line application designed for beginner programmers. It helps users manage and monitor their stock investments by allowing them to input stock names, quantities, and automatically calculate the total portfolio value based on current prices.
+Stock Portfolio Tracker is a simple and practical command-line Python application designed especially for beginner programmers. The main objective is to allow users to track their stock investments by entering stock names and quantities, and calculating the total portfolio value based on fixed prices.
 
-Project Concept
-Users can enter the stock name and the quantity they hold.
+Game Concept
+A set of predefined stocks and their current prices are stored in a Python dictionary:
+"RELIANCE", "TCS", "INFY", "HDFC", "ITC", "HCL", "WIPRO", and more.
 
-The program uses a predefined dictionary of stock prices (e.g., RELIANCE: ₹3050) to compute the value of each stock in the portfolio.
+The user is prompted to input stock names and quantities:
 
-At the end of the input, it displays:
+If the stock is valid, its total value is calculated (price × quantity).
 
-A summary of all stocks entered
+If the stock is invalid, a warning is shown and input is ignored.
 
-The total value of the portfolio
+Once the user types "done", the program displays:
 
-Optionally, individual stock-wise valuations
+A summary of each stock with quantity and total value
 
-Core Features
-Predefined stock list with current hardcoded prices
+The total portfolio value
 
-Input-driven collection of stock quantities
-
-Automatic calculation of:
-
-Individual stock values
-
-Total portfolio worth
-
-Graceful handling of invalid stock names
-
-Option to run multiple sessions or update stocks dynamically
+This program simulates a personal stock-tracking tool, useful for beginners to understand data collection and calculation with real-world examples.
 
 Extended Features
-This version is modularized using a portfolio_tracker() function and includes:
+This version includes a modular structure using a portfolio_tracker() function, which allows:
 
-Looping structure for tracking multiple stocks in a session
+Tracking multiple stocks in a session
 
-Handling of "done" keyword to stop input
+Looping to handle dynamic stock entries
 
-Clean, organized display of results
+Summing up total portfolio value at the end
 
-Easy-to-update stock price dictionary
+Optionally prompting the user to track again in a new session
 
 Python Concepts Used
-This project helps reinforce essential Python programming skills such as:
+This project helps reinforce important Python programming concepts:
 
 Loops (while, for)
 
-Functions and modular programming
+Functions and modular code (def)
 
-Dictionaries and list manipulation
+Dictionaries and list operations
 
-String handling and formatting
+User input and output handling
 
-User input/output
+Conditional statements (if, else)
 
-Conditional logic (if, else)
+String formatting and numeric operations
 
 Customization
-You can easily extend or modify the tracker to:
+You can easily extend or customize this tracker:
 
-Fetch real-time stock prices using APIs (e.g., from NSE/BSE)
+Add more stocks and prices to the dictionary
 
-Add date-wise tracking or portfolio history
+Integrate real-time stock prices using APIs (like NSE/BSE or Yahoo Finance)
 
-Generate PDF reports or graphs
+Include date-wise or session-based tracking
 
-Include profit/loss calculations over time
+Add features like profit/loss calculation, percentage gains, or chart visualization
 
-Build a GUI version using Tkinter or a web version with Flask
+Build a GUI or web interface using tools like Tkinter or Flask
 
 Ideal For
 Beginner Python programmers
 
-Students learning real-life application development
+Students learning dictionaries, input handling, and basic logic
 
-Anyone interested in financial programming
+Finance and commerce students exploring tech integration
 
-Hobbyists wanting a personal finance tool
+Anyone wanting to build a useful, real-world Python project
